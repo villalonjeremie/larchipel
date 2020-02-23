@@ -1,0 +1,21 @@
+2020-02-22T15:24:31+00:00 CRITICAL Uncaught Error: Class 'ActionScheduler_DataController' not found in /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/classes/abstracts/ActionScheduler.php:141
+Stack trace:
+#0 /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/action-scheduler.php(44): ActionScheduler::init('/www/wp-content...')
+#1 /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/classes/ActionScheduler_Versions.php(59): action_scheduler_initialize_3_dot_0_dot_1()
+#2 /wordpress/wp-includes/class-wp-hook.php(286): ActionScheduler_Versions::initialize_latest_version()
+#3 /wordpress/wp-includes/class-wp-hook.php(312): WP_Hook->apply_filters(NULL, Array)
+#4 /wordpress/wp-includes/plugin.php(478): WP_Hook->do_action(Array)
+#5 /wordpress/wp-settings.php(395): do_action('plugins_loaded')
+#6 /www/wp-config.php(102): require_once('/wordpress/wp-s...')
+#7 /wordpress/wp-config.php(5): require('/www/wp-config....')
+#8 /wordpress/wp-load.php(37): require_onc in /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/classes/abstracts/ActionScheduler.php on line 141
+
+2020-02-22T15:24:34+00:00 CRITICAL Uncaught Error: Class 'ActionScheduler_Store_Deprecated' not found in /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/classes/abstracts/ActionScheduler_Store.php:7
+Stack trace:
+#0 /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/classes/abstracts/ActionScheduler.php(120): include()
+#1 [internal function]: ActionScheduler::autoload('ActionScheduler...')
+#2 /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/classes/abstracts/ActionScheduler.php(23): spl_autoload_call('ActionScheduler...')
+#3 /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/classes/abstracts/ActionScheduler.php(143): ActionScheduler::store()
+#4 /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/action-scheduler.php(44): ActionScheduler::init('/www/wp-content...')
+#5 /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/classes/ActionScheduler_Versions.p in /www/wp-content/plugins/mailchimp-for-woocommerce/includes/vendor/action-scheduler/classes/abstracts/ActionScheduler_Store.php on line 7
+
